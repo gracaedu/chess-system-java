@@ -31,5 +31,12 @@ public class Board {
 		return pieces[position.getRow()][position.getColumn()];
 		
 	}
+	// Colocar a peca no tabuleiro (peca e posicao) 
+	public void placePiece(Piece piece, Position position) {
+		pieces[position.getRow()][position.getColumn()] = piece;
+		// Posicao não é mais null
+		piece.position = position;
+		
+	}
 	
 }
